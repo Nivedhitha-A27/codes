@@ -1,0 +1,61 @@
+
+
+
+
+
+import java.util.Scanner;
+class Switch_case {
+    public static void main(String[] args) {
+      Scanner scan=new Scanner(System.in);
+      System.out.println("Enter Tamil Mark:");
+      int a=scan.nextInt();
+      System.out.println("Enter English Mark:");
+      int b=scan.nextInt();
+      System.out.println("Enter Maths Mark:");
+      int c=scan.nextInt();
+      System.out.println("Enter Science Mark:");
+      int d=scan.nextInt();
+      System.out.println("Enter Social Mark:");
+      int e=scan.nextInt();
+      int tot=a+b+c+d+e;
+      System.out.println("Total Mark:"+tot);
+      int ave=500/tot;
+      System.out.println("Average Mark:"+ave);
+      
+      char v=' ';
+      
+      if(ave<2){
+          v='d';
+      }
+      if(ave<3){
+          v='c';
+      }
+      if(ave<4){
+          v='b';
+      }
+      if(ave<5){
+          v='a';
+      }
+    
+      switch(v)
+      {
+          case 'a':
+              System.out.println("Destination");
+              break;
+          case 'b':     
+               System.out.println("First Class");
+               break;
+          case 'c':     
+               System.out.println("Second Class");
+               break;           
+          case 'd':     
+               System.out.println("Third Class");
+               break;     
+          default:
+               System.out.println("************");
+    }
+                    
+                    
+     
+    }
+}
