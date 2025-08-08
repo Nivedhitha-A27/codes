@@ -1,0 +1,56 @@
+import java.util.Scanner;
+class Switch_case {
+    public static void main(String[] args) {
+      Scanner scan=new Scanner(System.in);
+      System.out.println("availability of books");
+      System.out.println(" Tamil :");
+      int a=scan.nextInt();
+      System.out.println(" English :");
+      int b=scan.nextInt();
+      System.out.println(" Maths :");
+      int c=scan.nextInt();
+      System.out.println(" Science :");
+      int d=scan.nextInt();
+      System.out.println(" Social :");
+      int e=scan.nextInt();
+      int tot=a+b+c+d+e;
+      System.out.println("total:"+tot);
+      int ave=500/tot;
+      char v=' ';
+      
+      if(ave<5){
+          v='d';
+      }
+      if(ave<4){
+          v='c';
+      }
+      if(ave<3){
+          v='b';
+      }
+      if(ave<2){
+          v='a';
+      }
+    
+      switch(v)
+      {
+          case 'a':
+              System.out.println("books available");
+              break;
+          case 'b':     
+               System.out.println("lesser");
+               break;
+          case 'c':     
+               System.out.println("more lesser");
+               break;           
+          case 'd':     
+               System.out.println("make order");
+               break;     
+          default:
+               System.out.println("make order immideately");
+               break;
+    }
+                    
+                    
+     
+    }
+}
