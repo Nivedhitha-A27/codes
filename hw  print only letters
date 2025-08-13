@@ -1,0 +1,19 @@
+public class sample{
+    public static void main(String[] args){
+       
+       
+        String input="nivi27";
+        String result="";
+        
+        
+        for(char c:input.toCharArray()){
+            if((c>='a'&&c<='z')||(c>='A'&&c<='z')){
+               result+=c;
+            }
+            
+        }
+        
+        System.out.println(result);
+    }
+}
+
